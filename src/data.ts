@@ -18,27 +18,17 @@ Outside of research, I build with React, .NET MAUI, WinForms, and C#, and I writ
 export const projects: Project[] = [
   {
     id: "p1",
-    title: "Voltlearn",
-    description:
-      "A course platform for learning circuit design and analysis. Users can subscribe to courses and complete quizzes, while admins can create and manage courses, quizzes, and users.",
-    tags: ["HTML", "CSS", "JavaScript", "Web Development"],
-    year: 2025,
-    featured: true,
-    github: "", // ← paste your GitHub repo URL here
-    link: "", // ← paste your live site URL here
-    image: "", // ← paste an image URL or use '/images/voltlearn.png'
-  },
-  {
-    id: "p2",
     title: "Khadamati",
     description:
       "A services marketplace mobile app where users can browse and subscribe to services, providers can register their offerings, and admins moderate the platform.",
     tags: ["Java", "Mobile Development", "Android"],
     year: 2025,
     featured: true,
+    github: "https://github.com/zeina-merchad/Khadamati",
+    image: "/khadamati.jpeg"
   },
   {
-    id: "p3",
+    id: "p2",
     title: "Optimizing GCNs with CUDA Acceleration",
     description:
       "Accelerated Graph Convolutional Network computations using CUDA and parallel GPU processing. Addressed scalability challenges in node classification, link prediction, and graph classification tasks.",
@@ -49,22 +39,35 @@ export const projects: Project[] = [
       "Graph Neural Networks",
     ],
     year: 2025,
+    featured: true,
   },
   {
-    id: "p4",
+    id: "p3",
     title: "Node Classification in the Cora Dataset",
     description:
       "Implemented and compared multiple GNN architectures — GCN, GAT, and Jumping Knowledge — for classifying academic papers in the Cora citation network. Included feature extraction, edge mapping, and model interpretability analysis.",
     tags: ["Python", "PyTorch", "GNN", "Machine Learning"],
     year: 2024,
+    github: "https://github.com/zeina-merchad/CoraProject",
+    image: "/Cora.png"
+  },
+  {
+    id: "p4",
+    title: "BuzzerGUI",
+    description:
+      "A 4-player football trivia buzzer system built on ESP32 hardware, using MQTT to relay buzz-in events in real time to a GUI that manages trivia questions and tracks which player buzzed in first.",
+    tags: ["ESP32", "MQTT", "Embedded Systems", "IoT"],
+    year: 2025,
   },
   {
     id: "p5",
-    title: "HZA Messenger",
+    title: "Woodland Baskinta",
     description:
-      "A chat application built for a computer networking course. Implemented messaging over UDP with a custom reliability layer, file transfer over TCP, and tested under simulated poor network conditions using Linux Netem.",
-    tags: ["TCP", "UDP", "Networking", "Linux", "C"],
-    year: 2024,
+      "A freelance client website for Woodland Baskinta, built and deployed as a live production site.",
+    tags: ["Freelance", "Web Development"],
+    year: 2025,
+    link: "https://www.woodlandbaskinta.com/",
+    image: "/woodland.png",
   },
 ];
 
@@ -109,7 +112,9 @@ The options are real. You could go into industry, chase a research career, do a 
 
 It doesn't.
 
-What nobody prepares you for is that freedom and anxiety are the same coin. When someone else sets the structure — a syllabus, a semester, a graduation requirement — your job is just to move forward. The track exists. You run on it. But the moment the track ends, you realize forward is a direction you have to invent yourself, and inventing it requires knowing who you are and what you actually want. Two things that four years of coursework somehow never formally addressed.
+What nobody prepares you for is that freedom and anxiety are the same coin. When someone else sets the structure — a syllabus, a semester, a graduation requirement — your job is just to move forward. The track exists. You run on it. But the moment the track ends, you realize forward is a direction you have to invent yourself, and inventing it requires knowing who you are and what you actually want. Two things that four
+
+of coursework somehow never formally addressed.
 
 I've talked to enough people my age to know this isn't just me. The high-achievers are somehow the most paralyzed — because they've spent so long optimizing for external validation that the absence of a rubric feels like a void. What does it mean to do well at life? There's no grade. There's no professor to ask.
 
@@ -125,7 +130,7 @@ That's not a problem to solve. That's just what growing up actually feels like.
 export const skills: Skill[] = [
   {
     category: "Languages",
-    items: ["C#", "Python", "C", "C++", "TypeScript", "JavaScript"],
+    items: ["C#", "Python", "C", "TypeScript", "JavaScript"],
   },
   {
     category: "Frameworks & UI",
@@ -138,8 +143,6 @@ export const skills: Skill[] = [
       "Parameterized Complexity",
       "Algorithm Design",
       "Computational Complexity",
-      "NP-hardness Proofs",
-      "Kernelization",
     ],
   },
   {

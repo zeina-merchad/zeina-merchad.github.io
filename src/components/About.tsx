@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <div className="grid md:grid-cols-3 gap-16">
         <div className="md:col-span-1">
           <p className="font-mono text-accent text-xs tracking-widest uppercase mb-3">
-            01 — About
+            // 01 — About
           </p>
           <h2 className="font-display text-3xl font-bold text-ink-900 leading-snug">
             Who I am
@@ -24,9 +24,10 @@ const About: React.FC = () => {
               </p>
             ))}
 
-          <div className="grid grid-cols-2 gap-6 pt-4">
+          {/* 3 stats → 3 columns, so the row is always full */}
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-4">
             <div className="border-l-2 border-accent pl-4">
-              <p className="font-mono text-2xl font-medium text-ink-900">1+</p>
+              <p className="font-mono text-2xl font-medium text-ink-900">2+</p>
               <p className="text-sm text-ink-500 mt-1">Years of Experience</p>
             </div>
             <div className="border-l-2 border-accent pl-4">
@@ -34,7 +35,7 @@ const About: React.FC = () => {
               <p className="text-sm text-ink-500 mt-1">Published papers</p>
             </div>
             <div className="border-l-2 border-accent pl-4">
-              <p className="font-mono text-2xl font-medium text-ink-900">7+</p>
+              <p className="font-mono text-2xl font-medium text-ink-900">10+</p>
               <p className="text-sm text-ink-500 mt-1">Open source projects</p>
             </div>
           </div>

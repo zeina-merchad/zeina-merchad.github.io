@@ -39,9 +39,9 @@ const Navbar: React.FC = () => {
       <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
         <a
           href="/#"
-          className="font-display text-lg font-semibold text-ink-900 tracking-tight hover:text-accent transition-colors"
+          className="font-mono text-sm font-medium text-ink-900 hover:text-accent transition-colors"
         >
-          Zeina Merchad
+          <span className="text-accent">~/</span>zeina-merchad
         </a>
 
         {/* Desktop nav */}

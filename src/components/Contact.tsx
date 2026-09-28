@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-16">
           <div className="md:col-span-1">
             <p className="font-mono text-accent text-xs tracking-widest uppercase mb-3">
-              06 — Contact
+              // 06 — Contact
             </p>
             <h2 className="font-display text-3xl font-bold text-ink-900 leading-snug mb-4">
               Let's talk
@@ -89,7 +89,8 @@ const Contact: React.FC = () => {
                     height="18"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#C9622F"
+                    stroke="currentColor"
+                    className="text-accent"
                     strokeWidth="2.5"
                   >
                     <polyline points="20,6 9,17 4,12" />
@@ -112,7 +113,7 @@ const Contact: React.FC = () => {
               <div className="space-y-4">
                 {/* Empty fields error */}
                 {status === "error" && (
-                  <div className="bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
+                  <div className="bg-red-900/20 border border-red-800 px-4 py-3 text-sm text-red-300">
                     {!form.name.trim() ||
                     !form.email.trim() ||
                     !form.message.trim()

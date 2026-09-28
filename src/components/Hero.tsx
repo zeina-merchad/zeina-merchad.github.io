@@ -5,14 +5,15 @@ const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center pt-20 pb-16 px-6 max-w-5xl mx-auto">
       <div className="max-w-2xl">
-        <p className="font-mono text-accent text-sm mb-4 tracking-widest uppercase">
-          Hello, I'm
+        <p className="font-mono text-accent text-sm mb-4">
+          <span className="text-ink-400">~</span> $ whoami
         </p>
-        <h1 className="font-display text-5xl md:text-7xl font-bold text-ink-900 leading-tight mb-6">
+        <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight text-ink-900 leading-tight mb-6">
           {personalInfo.name}
         </h1>
-        <p className="font-display text-xl md:text-2xl text-ink-600 italic mb-6 leading-relaxed">
-          {personalInfo.title}
+        <p className="font-mono text-lg md:text-xl text-ink-700 mb-6 leading-relaxed">
+          <span className="text-accent">&gt;</span> {personalInfo.title}
+          <span className="inline-block w-2.5 h-5 md:h-6 ml-1 align-middle bg-accent animate-blink" aria-hidden="true" />
         </p>
         <p className="text-ink-600 text-base md:text-lg leading-relaxed mb-10 max-w-xl">
           {personalInfo.tagline}

@@ -8,7 +8,7 @@ const Research: React.FC = () => {
     <section id="research" className="py-24 px-6 max-w-5xl mx-auto">
       <div className="flex items-end justify-between mb-12">
         <div>
-          <p className="font-mono text-accent text-xs tracking-widest uppercase mb-3">03 — Research</p>
+          <p className="font-mono text-accent text-xs tracking-widest uppercase mb-3">// 03 — Research</p>
           <h2 className="font-display text-3xl font-bold text-ink-900">Published papers</h2>
         </div>
         <span className="font-mono text-xs text-ink-400">{papers.length} papers</span>

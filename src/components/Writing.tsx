@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import { blogPosts } from "../data";
 
 const Writing: React.FC = () => {
+  const isOdd = blogPosts.length % 2 === 1;
+
   return (
     <section id="writing" className="py-24 bg-white">
       <div className="px-6 max-w-5xl mx-auto">
         <div className="flex items-end justify-between mb-12">
           <div>
             <p className="font-mono text-accent text-xs tracking-widest uppercase mb-3">
-              04 — Writing
+              // 04 — Writing
             </p>
             <h2 className="font-display text-3xl font-bold text-ink-900">
               From the blog
@@ -17,12 +19,15 @@ const Writing: React.FC = () => {
           </div>
         </div>
 
+        {/* 2 per row; an odd last post spans the full row so no cell is left empty */}
         <div className="grid md:grid-cols-2 gap-px bg-ink-200 border border-ink-200">
-          {blogPosts.map((post) => (
+          {blogPosts.map((post, i) => (
             <Link
               key={post.id}
               to={`/blog/${post.slug}`}
-              className="group bg-white p-6 flex flex-col gap-3 hover:bg-ink-50 transition-colors"
+              className={`group bg-white p-6 flex flex-col gap-3 hover:bg-ink-50 transition-colors ${
+                isOdd && i === blogPosts.length - 1 ? "md:col-span-2" : ""
+              }`}
             >
               <div className="flex items-center gap-3">
                 <span className="font-mono text-xs text-ink-400">
