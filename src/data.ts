@@ -38,6 +38,7 @@ export const projects: Project[] = [
       "Deep Learning",
       "Graph Neural Networks",
     ],
+    github: "https://github.com/zeina-merchad/ParallelizedGNN",
     year: 2025,
     featured: true,
   },
@@ -58,6 +59,7 @@ export const projects: Project[] = [
       "A 4-player football trivia buzzer system built on ESP32 hardware, using MQTT to relay buzz-in events in real time to a GUI that manages trivia questions and tracks which player buzzed in first.",
     tags: ["ESP32", "MQTT", "Embedded Systems", "IoT"],
     year: 2025,
+    github: "https://github.com/zeina-merchad/BuzzerGUI",
   },
   {
     id: "p5",
