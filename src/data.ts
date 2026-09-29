@@ -18,6 +18,16 @@ Outside of research, I build with React, .NET MAUI, WinForms, and C#, and I writ
 export const projects: Project[] = [
   {
     id: "p1",
+    title: "Web Mockup Template",
+    description:
+      "A reusable company website template built with React, TypeScript and Vite. All content lives in a single data file, so it can be rebranded without touching the pages.",
+    tags: ["Template", "React", "Web Development"],
+    year: 2026,
+    link: "https://webmockup.vercel.app/",
+    image: "/webmockup.png",
+  },
+  {
+    id: "p2",
     title: "Khadamati",
     description:
       "A services marketplace mobile app where users can browse and subscribe to services, providers can register their offerings, and admins moderate the platform.",
@@ -28,7 +38,7 @@ export const projects: Project[] = [
     image: "/khadamati.jpeg"
   },
   {
-    id: "p2",
+    id: "p3",
     title: "Optimizing GCNs with CUDA Acceleration",
     description:
       "Accelerated Graph Convolutional Network computations using CUDA and parallel GPU processing. Addressed scalability challenges in node classification, link prediction, and graph classification tasks.",
@@ -43,7 +53,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "p3",
+    id: "p4",
     title: "Node Classification in the Cora Dataset",
     description:
       "Implemented and compared multiple GNN architectures — GCN, GAT, and Jumping Knowledge — for classifying academic papers in the Cora citation network. Included feature extraction, edge mapping, and model interpretability analysis.",
@@ -53,7 +63,7 @@ export const projects: Project[] = [
     image: "/Cora.png"
   },
   {
-    id: "p4",
+    id: "p5",
     title: "BuzzerGUI",
     description:
       "A 4-player football trivia buzzer system built on ESP32 hardware, using MQTT to relay buzz-in events in real time to a GUI that manages trivia questions and tracks which player buzzed in first.",
@@ -62,7 +72,7 @@ export const projects: Project[] = [
     github: "https://github.com/zeina-merchad/BuzzerGUI",
   },
   {
-    id: "p5",
+    id: "p6",
     title: "Woodland Baskinta",
     description:
       "A freelance client website for Woodland Baskinta, built and deployed as a live production site.",
@@ -71,6 +81,7 @@ export const projects: Project[] = [
     link: "https://www.woodlandbaskinta.com/",
     image: "/woodland.png",
   },
+
 ];
 
 export const papers: Paper[] = [
